@@ -1,0 +1,178 @@
+nohup: 입력 무시
+device: cuda
+[search 1/135 mlp] lr=0.0005 hidden=16 dropout=0.1 | val PR-AUC 0.7550 (best ep 10/10, 57.9s)
+[search 2/135 mlp] lr=0.0005 hidden=16 dropout=0.2 | val PR-AUC 0.7565 (best ep 10/10, 55.4s)
+[search 3/135 mlp] lr=0.0005 hidden=16 dropout=0.3 | val PR-AUC 0.7319 (best ep 10/10, 55.4s)
+[search 4/135 mlp] lr=0.0005 hidden=32 dropout=0.1 | val PR-AUC 0.7807 (best ep 9/10, 55.5s)
+[search 5/135 mlp] lr=0.0005 hidden=32 dropout=0.2 | val PR-AUC 0.7763 (best ep 9/10, 55.5s)
+[search 6/135 mlp] lr=0.0005 hidden=32 dropout=0.3 | val PR-AUC 0.7674 (best ep 9/10, 55.5s)
+[search 7/135 mlp] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.7918 (best ep 10/10, 55.6s)
+[search 8/135 mlp] lr=0.0005 hidden=64 dropout=0.2 | val PR-AUC 0.7882 (best ep 9/10, 55.6s)
+[search 9/135 mlp] lr=0.0005 hidden=64 dropout=0.3 | val PR-AUC 0.7859 (best ep 9/10, 55.6s)
+[search 10/135 mlp] lr=0.001 hidden=16 dropout=0.1 | val PR-AUC 0.7809 (best ep 9/10, 55.6s)
+[search 11/135 mlp] lr=0.001 hidden=16 dropout=0.2 | val PR-AUC 0.7654 (best ep 10/10, 55.6s)
+[search 12/135 mlp] lr=0.001 hidden=16 dropout=0.3 | val PR-AUC 0.7557 (best ep 10/10, 55.6s)
+[search 13/135 mlp] lr=0.001 hidden=32 dropout=0.1 | val PR-AUC 0.7913 (best ep 10/10, 55.6s)
+[search 14/135 mlp] lr=0.001 hidden=32 dropout=0.2 | val PR-AUC 0.7843 (best ep 9/10, 55.7s)
+[search 15/135 mlp] lr=0.001 hidden=32 dropout=0.3 | val PR-AUC 0.7773 (best ep 9/10, 55.6s)
+[search 16/135 mlp] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.8083 (best ep 10/10, 55.7s)
+[search 17/135 mlp] lr=0.001 hidden=64 dropout=0.2 | val PR-AUC 0.7986 (best ep 10/10, 55.7s)
+[search 18/135 mlp] lr=0.001 hidden=64 dropout=0.3 | val PR-AUC 0.7896 (best ep 10/10, 55.7s)
+[search 19/135 mlp] lr=0.005 hidden=16 dropout=0.1 | val PR-AUC 0.7965 (best ep 10/10, 55.6s)
+[search 20/135 mlp] lr=0.005 hidden=16 dropout=0.2 | val PR-AUC 0.7695 (best ep 2/5, 27.8s)
+[search 21/135 mlp] lr=0.005 hidden=16 dropout=0.3 | val PR-AUC 0.7716 (best ep 2/5, 27.8s)
+[search 22/135 mlp] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8189 (best ep 10/10, 55.6s)
+[search 23/135 mlp] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.7844 (best ep 3/6, 33.5s)
+[search 24/135 mlp] lr=0.005 hidden=32 dropout=0.3 | val PR-AUC 0.7865 (best ep 6/9, 50.1s)
+[search 25/135 mlp] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.8162 (best ep 10/10, 55.8s)
+[search 26/135 mlp] lr=0.005 hidden=64 dropout=0.2 | val PR-AUC 0.8149 (best ep 10/10, 55.6s)
+[search 27/135 mlp] lr=0.005 hidden=64 dropout=0.3 | val PR-AUC 0.8111 (best ep 10/10, 55.7s)
+[search 28/135 gru] lr=0.0005 hidden=16 dropout=0.1 | val PR-AUC 0.7873 (best ep 9/10, 58.6s)
+[search 29/135 gru] lr=0.0005 hidden=16 dropout=0.2 | val PR-AUC 0.7889 (best ep 9/10, 58.5s)
+[search 30/135 gru] lr=0.0005 hidden=16 dropout=0.3 | val PR-AUC 0.7870 (best ep 9/10, 58.6s)
+[search 31/135 gru] lr=0.0005 hidden=32 dropout=0.1 | val PR-AUC 0.7911 (best ep 9/10, 58.6s)
+[search 32/135 gru] lr=0.0005 hidden=32 dropout=0.2 | val PR-AUC 0.7930 (best ep 9/10, 58.6s)
+[search 33/135 gru] lr=0.0005 hidden=32 dropout=0.3 | val PR-AUC 0.7888 (best ep 9/10, 58.6s)
+[search 34/135 gru] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.8092 (best ep 9/10, 58.6s)
+[search 35/135 gru] lr=0.0005 hidden=64 dropout=0.2 | val PR-AUC 0.8058 (best ep 9/10, 58.7s)
+[search 36/135 gru] lr=0.0005 hidden=64 dropout=0.3 | val PR-AUC 0.7955 (best ep 4/7, 41.1s)
+[search 37/135 gru] lr=0.001 hidden=16 dropout=0.1 | val PR-AUC 0.7951 (best ep 9/10, 58.6s)
+[search 38/135 gru] lr=0.001 hidden=16 dropout=0.2 | val PR-AUC 0.8027 (best ep 9/10, 58.6s)
+[search 39/135 gru] lr=0.001 hidden=16 dropout=0.3 | val PR-AUC 0.7994 (best ep 9/10, 58.6s)
+[search 40/135 gru] lr=0.001 hidden=32 dropout=0.1 | val PR-AUC 0.8147 (best ep 9/10, 58.6s)
+[search 41/135 gru] lr=0.001 hidden=32 dropout=0.2 | val PR-AUC 0.8001 (best ep 9/10, 58.6s)
+[search 42/135 gru] lr=0.001 hidden=32 dropout=0.3 | val PR-AUC 0.7989 (best ep 7/10, 58.6s)
+[search 43/135 gru] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.8391 (best ep 9/10, 58.6s)
+[search 44/135 gru] lr=0.001 hidden=64 dropout=0.2 | val PR-AUC 0.8300 (best ep 9/10, 58.6s)
+[search 45/135 gru] lr=0.001 hidden=64 dropout=0.3 | val PR-AUC 0.8252 (best ep 10/10, 58.7s)
+[search 46/135 gru] lr=0.005 hidden=16 dropout=0.1 | val PR-AUC 0.8341 (best ep 10/10, 58.6s)
+[search 47/135 gru] lr=0.005 hidden=16 dropout=0.2 | val PR-AUC 0.8210 (best ep 10/10, 58.6s)
+[search 48/135 gru] lr=0.005 hidden=16 dropout=0.3 | val PR-AUC 0.8099 (best ep 4/7, 41.1s)
+[search 49/135 gru] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8349 (best ep 9/10, 58.6s)
+[search 50/135 gru] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.8436 (best ep 10/10, 58.7s)
+[search 51/135 gru] lr=0.005 hidden=32 dropout=0.3 | val PR-AUC 0.8260 (best ep 9/10, 58.7s)
+[search 52/135 gru] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.8103 (best ep 3/6, 35.2s)
+[search 53/135 gru] lr=0.005 hidden=64 dropout=0.2 | val PR-AUC 0.8340 (best ep 8/10, 58.6s)
+[search 54/135 gru] lr=0.005 hidden=64 dropout=0.3 | val PR-AUC 0.8426 (best ep 10/10, 58.7s)
+[search 55/135 lstm] lr=0.0005 hidden=16 dropout=0.1 | val PR-AUC 0.7756 (best ep 10/10, 59.2s)
+[search 56/135 lstm] lr=0.0005 hidden=16 dropout=0.2 | val PR-AUC 0.7749 (best ep 10/10, 59.3s)
+[search 57/135 lstm] lr=0.0005 hidden=16 dropout=0.3 | val PR-AUC 0.7761 (best ep 10/10, 59.3s)
+[search 58/135 lstm] lr=0.0005 hidden=32 dropout=0.1 | val PR-AUC 0.8023 (best ep 8/10, 59.2s)
+[search 59/135 lstm] lr=0.0005 hidden=32 dropout=0.2 | val PR-AUC 0.7922 (best ep 8/10, 59.3s)
+[search 60/135 lstm] lr=0.0005 hidden=32 dropout=0.3 | val PR-AUC 0.7815 (best ep 6/9, 53.3s)
+[search 61/135 lstm] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.8040 (best ep 9/10, 59.2s)
+[search 62/135 lstm] lr=0.0005 hidden=64 dropout=0.2 | val PR-AUC 0.8013 (best ep 10/10, 59.3s)
+[search 63/135 lstm] lr=0.0005 hidden=64 dropout=0.3 | val PR-AUC 0.8010 (best ep 8/10, 59.3s)
+[search 64/135 lstm] lr=0.001 hidden=16 dropout=0.1 | val PR-AUC 0.7937 (best ep 9/10, 59.4s)
+[search 65/135 lstm] lr=0.001 hidden=16 dropout=0.2 | val PR-AUC 0.7864 (best ep 9/10, 59.7s)
+[search 66/135 lstm] lr=0.001 hidden=16 dropout=0.3 | val PR-AUC 0.7874 (best ep 10/10, 59.3s)
+[search 67/135 lstm] lr=0.001 hidden=32 dropout=0.1 | val PR-AUC 0.8052 (best ep 10/10, 59.2s)
+[search 68/135 lstm] lr=0.001 hidden=32 dropout=0.2 | val PR-AUC 0.8030 (best ep 9/10, 59.4s)
+[search 69/135 lstm] lr=0.001 hidden=32 dropout=0.3 | val PR-AUC 0.7948 (best ep 10/10, 59.3s)
+[search 70/135 lstm] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.8174 (best ep 9/10, 59.3s)
+[search 71/135 lstm] lr=0.001 hidden=64 dropout=0.2 | val PR-AUC 0.8129 (best ep 10/10, 59.3s)
+[search 72/135 lstm] lr=0.001 hidden=64 dropout=0.3 | val PR-AUC 0.8100 (best ep 9/10, 59.2s)
+[search 73/135 lstm] lr=0.005 hidden=16 dropout=0.1 | val PR-AUC 0.8453 (best ep 9/10, 59.2s)
+[search 74/135 lstm] lr=0.005 hidden=16 dropout=0.2 | val PR-AUC 0.8213 (best ep 7/10, 59.3s)
+[search 75/135 lstm] lr=0.005 hidden=16 dropout=0.3 | val PR-AUC 0.8150 (best ep 10/10, 59.3s)
+[search 76/135 lstm] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8549 (best ep 9/10, 59.2s)
+[search 77/135 lstm] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.8385 (best ep 9/10, 59.3s)
+[search 78/135 lstm] lr=0.005 hidden=32 dropout=0.3 | val PR-AUC 0.8212 (best ep 10/10, 59.4s)
+[search 79/135 lstm] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.8477 (best ep 10/10, 60.7s)
+[search 80/135 lstm] lr=0.005 hidden=64 dropout=0.2 | val PR-AUC 0.8421 (best ep 9/10, 60.2s)
+[search 81/135 lstm] lr=0.005 hidden=64 dropout=0.3 | val PR-AUC 0.8444 (best ep 9/10, 58.5s)
+[search 82/135 tcn] lr=0.0005 hidden=16 dropout=0.1 | val PR-AUC 0.7981 (best ep 8/10, 65.0s)
+[search 83/135 tcn] lr=0.0005 hidden=16 dropout=0.2 | val PR-AUC 0.7951 (best ep 10/10, 64.9s)
+[search 84/135 tcn] lr=0.0005 hidden=16 dropout=0.3 | val PR-AUC 0.7893 (best ep 9/10, 65.0s)
+[search 85/135 tcn] lr=0.0005 hidden=32 dropout=0.1 | val PR-AUC 0.7977 (best ep 10/10, 66.8s)
+[search 86/135 tcn] lr=0.0005 hidden=32 dropout=0.2 | val PR-AUC 0.7949 (best ep 9/10, 66.9s)
+[search 87/135 tcn] lr=0.0005 hidden=32 dropout=0.3 | val PR-AUC 0.7914 (best ep 9/10, 67.6s)
+[search 88/135 tcn] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.8284 (best ep 9/10, 66.4s)
+[search 89/135 tcn] lr=0.0005 hidden=64 dropout=0.2 | val PR-AUC 0.8216 (best ep 9/10, 66.3s)
+[search 90/135 tcn] lr=0.0005 hidden=64 dropout=0.3 | val PR-AUC 0.8081 (best ep 10/10, 66.6s)
+[search 91/135 tcn] lr=0.001 hidden=16 dropout=0.1 | val PR-AUC 0.8087 (best ep 7/10, 66.9s)
+[search 92/135 tcn] lr=0.001 hidden=16 dropout=0.2 | val PR-AUC 0.8023 (best ep 5/8, 53.5s)
+[search 93/135 tcn] lr=0.001 hidden=16 dropout=0.3 | val PR-AUC 0.7980 (best ep 6/9, 60.2s)
+[search 94/135 tcn] lr=0.001 hidden=32 dropout=0.1 | val PR-AUC 0.8189 (best ep 10/10, 67.5s)
+[search 95/135 tcn] lr=0.001 hidden=32 dropout=0.2 | val PR-AUC 0.8092 (best ep 8/10, 67.4s)
+[search 96/135 tcn] lr=0.001 hidden=32 dropout=0.3 | val PR-AUC 0.8046 (best ep 9/10, 67.2s)
+[search 97/135 tcn] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.8431 (best ep 9/10, 66.7s)
+[search 98/135 tcn] lr=0.001 hidden=64 dropout=0.2 | val PR-AUC 0.8331 (best ep 9/10, 66.7s)
+[search 99/135 tcn] lr=0.001 hidden=64 dropout=0.3 | val PR-AUC 0.8249 (best ep 9/10, 67.4s)
+[search 100/135 tcn] lr=0.005 hidden=16 dropout=0.1 | val PR-AUC 0.8414 (best ep 10/10, 66.9s)
+[search 101/135 tcn] lr=0.005 hidden=16 dropout=0.2 | val PR-AUC 0.8378 (best ep 10/10, 67.8s)
+[search 102/135 tcn] lr=0.005 hidden=16 dropout=0.3 | val PR-AUC 0.8250 (best ep 10/10, 67.0s)
+[search 103/135 tcn] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8481 (best ep 10/10, 66.0s)
+[search 104/135 tcn] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.8436 (best ep 9/10, 61.7s)
+[search 105/135 tcn] lr=0.005 hidden=32 dropout=0.3 | val PR-AUC 0.8361 (best ep 9/10, 64.7s)
+[search 106/135 tcn] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.8554 (best ep 9/10, 65.2s)
+[search 107/135 tcn] lr=0.005 hidden=64 dropout=0.2 | val PR-AUC 0.8418 (best ep 9/10, 65.8s)
+[search 108/135 tcn] lr=0.005 hidden=64 dropout=0.3 | val PR-AUC 0.8483 (best ep 10/10, 66.8s)
+[search 109/135 transformer] lr=0.0005 hidden=16 dropout=0.1 | val PR-AUC 0.7805 (best ep 10/10, 69.3s)
+[search 110/135 transformer] lr=0.0005 hidden=16 dropout=0.2 | val PR-AUC 0.7755 (best ep 9/10, 68.8s)
+[search 111/135 transformer] lr=0.0005 hidden=16 dropout=0.3 | val PR-AUC 0.7673 (best ep 10/10, 68.8s)
+[search 112/135 transformer] lr=0.0005 hidden=32 dropout=0.1 | val PR-AUC 0.8255 (best ep 10/10, 69.1s)
+[search 113/135 transformer] lr=0.0005 hidden=32 dropout=0.2 | val PR-AUC 0.8108 (best ep 10/10, 70.1s)
+[search 114/135 transformer] lr=0.0005 hidden=32 dropout=0.3 | val PR-AUC 0.8011 (best ep 10/10, 66.4s)
+[search 115/135 transformer] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.8360 (best ep 10/10, 69.4s)
+[search 116/135 transformer] lr=0.0005 hidden=64 dropout=0.2 | val PR-AUC 0.8258 (best ep 10/10, 69.4s)
+[search 117/135 transformer] lr=0.0005 hidden=64 dropout=0.3 | val PR-AUC 0.8140 (best ep 10/10, 69.0s)
+[search 118/135 transformer] lr=0.001 hidden=16 dropout=0.1 | val PR-AUC 0.7985 (best ep 10/10, 68.9s)
+[search 119/135 transformer] lr=0.001 hidden=16 dropout=0.2 | val PR-AUC 0.7831 (best ep 10/10, 69.0s)
+[search 120/135 transformer] lr=0.001 hidden=16 dropout=0.3 | val PR-AUC 0.7771 (best ep 10/10, 70.2s)
+[search 121/135 transformer] lr=0.001 hidden=32 dropout=0.1 | val PR-AUC 0.8358 (best ep 10/10, 69.0s)
+[search 122/135 transformer] lr=0.001 hidden=32 dropout=0.2 | val PR-AUC 0.8252 (best ep 10/10, 69.3s)
+[search 123/135 transformer] lr=0.001 hidden=32 dropout=0.3 | val PR-AUC 0.8058 (best ep 10/10, 69.0s)
+[search 124/135 transformer] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.8309 (best ep 9/10, 69.6s)
+[search 125/135 transformer] lr=0.001 hidden=64 dropout=0.2 | val PR-AUC 0.7860 (best ep 3/6, 41.9s)
+[search 126/135 transformer] lr=0.001 hidden=64 dropout=0.3 | val PR-AUC 0.8074 (best ep 9/10, 69.7s)
+[search 127/135 transformer] lr=0.005 hidden=16 dropout=0.1 | val PR-AUC 0.8022 (best ep 10/10, 69.2s)
+[search 128/135 transformer] lr=0.005 hidden=16 dropout=0.2 | val PR-AUC 0.7789 (best ep 4/7, 48.8s)
+[search 129/135 transformer] lr=0.005 hidden=16 dropout=0.3 | val PR-AUC 0.7797 (best ep 4/7, 48.9s)
+[search 130/135 transformer] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.7559 (best ep 1/4, 28.0s)
+[search 131/135 transformer] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.7831 (best ep 6/9, 62.9s)
+[search 132/135 transformer] lr=0.005 hidden=32 dropout=0.3 | val PR-AUC 0.7654 (best ep 1/4, 27.9s)
+[search 133/135 transformer] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.7695 (best ep 1/4, 28.0s)
+[search 134/135 transformer] lr=0.005 hidden=64 dropout=0.2 | val PR-AUC 0.7527 (best ep 2/5, 34.9s)
+[search 135/135 transformer] lr=0.005 hidden=64 dropout=0.3 | val PR-AUC 0.7090 (best ep 3/6, 41.3s)
+
+===== 탐색 결과: 모델별 최적 조합 (L=10, 검증 PR-AUC 기준) =====
+model             lr  hidden  dropout  val PR-AUC
+mlp            0.005      32      0.1      0.8189
+gru            0.005      32      0.2      0.8436
+lstm           0.005      32      0.1      0.8549
+tcn            0.005      64      0.1      0.8554
+transformer   0.0005      64      0.1      0.8360
+[final mlp_L5] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8367 (best ep 26/31, 170.4s) | TEST PR-AUC 0.8180 F1 0.4241
+[final gru_L5] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.8551 (best ep 15/20, 118.1s) | TEST PR-AUC 0.8460 F1 0.3768
+[final lstm_L5] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8411 (best ep 19/24, 145.0s) | TEST PR-AUC 0.8203 F1 0.3343
+[final tcn_L5] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.8722 (best ep 29/34, 225.8s) | TEST PR-AUC 0.8707 F1 0.4644
+[final transformer_L5] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.8332 (best ep 10/15, 103.7s) | TEST PR-AUC 0.8158 F1 0.4595
+[final mlp_L10] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8367 (best ep 26/31, 172.3s) | TEST PR-AUC 0.8180 F1 0.4241
+[final gru_L10] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.8532 (best ep 19/24, 143.3s) | TEST PR-AUC 0.8466 F1 0.3605
+[final lstm_L10] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8576 (best ep 13/18, 108.8s) | TEST PR-AUC 0.8476 F1 0.4808
+[final tcn_L10] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.8667 (best ep 13/18, 118.3s) | TEST PR-AUC 0.8538 F1 0.4928
+[final transformer_L10] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.8474 (best ep 17/22, 152.4s) | TEST PR-AUC 0.8242 F1 0.4736
+[final mlp_L20] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8367 (best ep 26/31, 173.8s) | TEST PR-AUC 0.8180 F1 0.4241
+[final gru_L20] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.8630 (best ep 18/23, 140.2s) | TEST PR-AUC 0.8483 F1 0.4831
+[final lstm_L20] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.8544 (best ep 19/24, 148.5s) | TEST PR-AUC 0.8481 F1 0.4754
+[final tcn_L20] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.8630 (best ep 15/20, 134.1s) | TEST PR-AUC 0.8508 F1 0.3726
+[final transformer_L20] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.8224 (best ep 10/15, 107.3s) | TEST PR-AUC 0.8049 F1 0.4425
+
+===== 최종 결과 (TEST, threshold 0.5) =====
+model          L     Acc       P       R      F1   ROC-AUC   PR-AUC  best_ep
+mlp            5  0.9729  0.2751  0.9260  0.4241    0.9889   0.8180   26/31
+gru            5  0.9657  0.2342  0.9625  0.3768    0.9947   0.8460   15/20
+lstm           5  0.9602  0.2039  0.9281  0.3343    0.9918   0.8203   19/24
+tcn            5  0.9765  0.3076  0.9469  0.4644    0.9958   0.8707   29/34
+transformer    5  0.9766  0.3060  0.9219  0.4595    0.9938   0.8158   10/15
+mlp           10  0.9729  0.2751  0.9260  0.4241    0.9889   0.8180   26/31
+gru           10  0.9635  0.2222  0.9542  0.3605    0.9937   0.8466   19/24
+lstm          10  0.9781  0.3231  0.9396  0.4808    0.9944   0.8476   13/18
+tcn           10  0.9792  0.3340  0.9396  0.4928    0.9950   0.8538   13/18
+transformer   10  0.9778  0.3183  0.9250  0.4736    0.9943   0.8242   17/22
+mlp           20  0.9729  0.2751  0.9260  0.4241    0.9889   0.8180   26/31
+gru           20  0.9786  0.3265  0.9281  0.4831    0.9940   0.8483   18/23
+lstm          20  0.9780  0.3199  0.9250  0.4754    0.9938   0.8481   19/24
+tcn           20  0.9658  0.2321  0.9437  0.3726    0.9935   0.8508   15/20
+transformer   20  0.9749  0.2908  0.9250  0.4425    0.9931   0.8049   10/15

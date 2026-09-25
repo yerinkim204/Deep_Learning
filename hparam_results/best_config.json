@@ -1,0 +1,32 @@
+{
+  "mlp": {
+    "lr": 0.005,
+    "hidden": 32,
+    "dropout": 0.1,
+    "val_pr_auc": 0.818933396358831
+  },
+  "gru": {
+    "lr": 0.005,
+    "hidden": 32,
+    "dropout": 0.2,
+    "val_pr_auc": 0.8436215794952144
+  },
+  "lstm": {
+    "lr": 0.005,
+    "hidden": 32,
+    "dropout": 0.1,
+    "val_pr_auc": 0.8548879414057781
+  },
+  "tcn": {
+    "lr": 0.005,
+    "hidden": 64,
+    "dropout": 0.1,
+    "val_pr_auc": 0.8554116476629845
+  },
+  "transformer": {
+    "lr": 0.0005,
+    "hidden": 64,
+    "dropout": 0.1,
+    "val_pr_auc": 0.8359537183306518
+  }
+}

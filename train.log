@@ -1,0 +1,289 @@
+nohup: 입력 무시
+
+===== mlp_L5 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[mlp_L5] epoch 1/30 train_loss=0.6297 val_loss=0.3350 val_recall=0.9135 val_pr_auc=0.5966 | 5.8s
+[mlp_L5] epoch 2/30 train_loss=0.3446 val_loss=0.2997 val_recall=0.9250 val_pr_auc=0.7245 | 5.5s
+[mlp_L5] epoch 3/30 train_loss=0.3174 val_loss=0.2878 val_recall=0.9281 val_pr_auc=0.7530 | 5.5s
+[mlp_L5] epoch 4/30 train_loss=0.3033 val_loss=0.2789 val_recall=0.9354 val_pr_auc=0.7728 | 5.4s
+[mlp_L5] epoch 5/30 train_loss=0.2943 val_loss=0.2735 val_recall=0.9292 val_pr_auc=0.7761 | 5.5s
+[mlp_L5] epoch 6/30 train_loss=0.2890 val_loss=0.2683 val_recall=0.9396 val_pr_auc=0.7813 | 5.4s
+[mlp_L5] epoch 7/30 train_loss=0.2841 val_loss=0.2653 val_recall=0.9375 val_pr_auc=0.7861 | 5.4s
+[mlp_L5] epoch 8/30 train_loss=0.2810 val_loss=0.2599 val_recall=0.9396 val_pr_auc=0.7847 | 5.4s
+[mlp_L5] epoch 9/30 train_loss=0.2748 val_loss=0.2579 val_recall=0.9385 val_pr_auc=0.7905 | 5.4s
+[mlp_L5] epoch 10/30 train_loss=0.2720 val_loss=0.2546 val_recall=0.9396 val_pr_auc=0.7913 | 5.4s
+[mlp_L5] epoch 11/30 train_loss=0.2682 val_loss=0.2560 val_recall=0.9448 val_pr_auc=0.7886 | 5.5s
+[mlp_L5] epoch 12/30 train_loss=0.2638 val_loss=0.2515 val_recall=0.9458 val_pr_auc=0.7935 | 5.5s
+[mlp_L5] epoch 13/30 train_loss=0.2641 val_loss=0.2471 val_recall=0.9365 val_pr_auc=0.7900 | 5.4s
+[mlp_L5] epoch 14/30 train_loss=0.2564 val_loss=0.2434 val_recall=0.9396 val_pr_auc=0.7949 | 5.4s
+[mlp_L5] epoch 15/30 train_loss=0.2555 val_loss=0.2368 val_recall=0.9469 val_pr_auc=0.7977 | 5.4s
+[mlp_L5] epoch 16/30 train_loss=0.2621 val_loss=0.2345 val_recall=0.9448 val_pr_auc=0.8020 | 5.4s
+[mlp_L5] epoch 17/30 train_loss=0.2478 val_loss=0.2328 val_recall=0.9437 val_pr_auc=0.8022 | 5.4s
+[mlp_L5] epoch 18/30 train_loss=0.2451 val_loss=0.2329 val_recall=0.9458 val_pr_auc=0.8004 | 5.4s
+[mlp_L5] epoch 19/30 train_loss=0.2424 val_loss=0.2296 val_recall=0.9417 val_pr_auc=0.8006 | 5.4s
+[mlp_L5] epoch 20/30 train_loss=0.2441 val_loss=0.2285 val_recall=0.9406 val_pr_auc=0.7956 | 5.4s
+[mlp_L5] epoch 21/30 train_loss=0.2436 val_loss=0.2297 val_recall=0.9427 val_pr_auc=0.7958 | 5.4s
+[mlp_L5] epoch 22/30 train_loss=0.2393 val_loss=0.2265 val_recall=0.9417 val_pr_auc=0.8019 | 5.4s
+[mlp_L5] early stopping (best epoch 17)
+[mlp_L5] TEST acc=0.9666 P=0.2316 R=0.9062 F1=0.3689 ROC-AUC=0.9794 PR-AUC=0.7666 | best epoch 17/22 (elapsed 120.0s)
+
+===== gru_L5 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[gru_L5] epoch 1/30 train_loss=0.5972 val_loss=0.3391 val_recall=0.9344 val_pr_auc=0.6962 | 6.0s
+[gru_L5] epoch 2/30 train_loss=0.3092 val_loss=0.3053 val_recall=0.9229 val_pr_auc=0.7739 | 6.1s
+[gru_L5] epoch 3/30 train_loss=0.2883 val_loss=0.2936 val_recall=0.9250 val_pr_auc=0.7765 | 6.1s
+[gru_L5] epoch 4/30 train_loss=0.2730 val_loss=0.2832 val_recall=0.9219 val_pr_auc=0.7841 | 5.9s
+[gru_L5] epoch 5/30 train_loss=0.2660 val_loss=0.2813 val_recall=0.9198 val_pr_auc=0.7865 | 6.0s
+[gru_L5] epoch 6/30 train_loss=0.2595 val_loss=0.2842 val_recall=0.9396 val_pr_auc=0.7789 | 5.8s
+[gru_L5] epoch 7/30 train_loss=0.2583 val_loss=0.2700 val_recall=0.9219 val_pr_auc=0.7932 | 5.9s
+[gru_L5] epoch 8/30 train_loss=0.2502 val_loss=0.2679 val_recall=0.9229 val_pr_auc=0.8019 | 5.9s
+[gru_L5] epoch 9/30 train_loss=0.2428 val_loss=0.2584 val_recall=0.9260 val_pr_auc=0.8072 | 6.0s
+[gru_L5] epoch 10/30 train_loss=0.2359 val_loss=0.2458 val_recall=0.9167 val_pr_auc=0.8072 | 5.9s
+[gru_L5] epoch 11/30 train_loss=0.2257 val_loss=0.2385 val_recall=0.9427 val_pr_auc=0.8118 | 6.0s
+[gru_L5] epoch 12/30 train_loss=0.2204 val_loss=0.2243 val_recall=0.9500 val_pr_auc=0.8144 | 6.0s
+[gru_L5] epoch 13/30 train_loss=0.2169 val_loss=0.2252 val_recall=0.9344 val_pr_auc=0.8225 | 6.1s
+[gru_L5] epoch 14/30 train_loss=0.2086 val_loss=0.2122 val_recall=0.9500 val_pr_auc=0.8275 | 5.9s
+[gru_L5] epoch 15/30 train_loss=0.2050 val_loss=0.2129 val_recall=0.9667 val_pr_auc=0.8273 | 6.1s
+[gru_L5] epoch 16/30 train_loss=0.2229 val_loss=0.2050 val_recall=0.9469 val_pr_auc=0.8352 | 6.0s
+[gru_L5] epoch 17/30 train_loss=0.1964 val_loss=0.2036 val_recall=0.9417 val_pr_auc=0.8406 | 6.1s
+[gru_L5] epoch 18/30 train_loss=0.1857 val_loss=0.2035 val_recall=0.9396 val_pr_auc=0.8304 | 5.9s
+[gru_L5] epoch 19/30 train_loss=0.1812 val_loss=0.1922 val_recall=0.9417 val_pr_auc=0.8425 | 6.0s
+[gru_L5] epoch 20/30 train_loss=0.1816 val_loss=0.1858 val_recall=0.9469 val_pr_auc=0.8423 | 6.0s
+[gru_L5] epoch 21/30 train_loss=0.1737 val_loss=0.1774 val_recall=0.9615 val_pr_auc=0.8477 | 6.1s
+[gru_L5] epoch 22/30 train_loss=0.1724 val_loss=0.1840 val_recall=0.9437 val_pr_auc=0.8441 | 5.9s
+[gru_L5] epoch 23/30 train_loss=0.1674 val_loss=0.1775 val_recall=0.9531 val_pr_auc=0.8473 | 6.0s
+[gru_L5] epoch 24/30 train_loss=0.1650 val_loss=0.1815 val_recall=0.9396 val_pr_auc=0.8545 | 6.0s
+[gru_L5] epoch 25/30 train_loss=0.1631 val_loss=0.1692 val_recall=0.9469 val_pr_auc=0.8529 | 6.1s
+[gru_L5] epoch 26/30 train_loss=0.1544 val_loss=0.1716 val_recall=0.9437 val_pr_auc=0.8576 | 5.9s
+[gru_L5] epoch 27/30 train_loss=0.1547 val_loss=0.1673 val_recall=0.9469 val_pr_auc=0.8496 | 6.0s
+[gru_L5] epoch 28/30 train_loss=0.1546 val_loss=0.1811 val_recall=0.9510 val_pr_auc=0.8457 | 5.9s
+[gru_L5] epoch 29/30 train_loss=0.1498 val_loss=0.1643 val_recall=0.9490 val_pr_auc=0.8612 | 6.0s
+[gru_L5] epoch 30/30 train_loss=0.1528 val_loss=0.1650 val_recall=0.9615 val_pr_auc=0.8472 | 5.9s
+[gru_L5] TEST acc=0.9775 P=0.3162 R=0.9396 F1=0.4731 ROC-AUC=0.9948 PR-AUC=0.8505 | best epoch 29/30 (elapsed 179.6s)
+
+===== lstm_L5 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[lstm_L5] epoch 1/30 train_loss=0.7268 val_loss=0.3229 val_recall=0.9271 val_pr_auc=0.7015 | 6.1s
+[lstm_L5] epoch 2/30 train_loss=0.3089 val_loss=0.2952 val_recall=0.9219 val_pr_auc=0.7806 | 6.1s
+[lstm_L5] epoch 3/30 train_loss=0.2964 val_loss=0.2857 val_recall=0.9250 val_pr_auc=0.7862 | 6.1s
+[lstm_L5] epoch 4/30 train_loss=0.2805 val_loss=0.2730 val_recall=0.9292 val_pr_auc=0.7903 | 6.1s
+[lstm_L5] epoch 5/30 train_loss=0.2737 val_loss=0.2711 val_recall=0.9271 val_pr_auc=0.7920 | 6.1s
+[lstm_L5] epoch 6/30 train_loss=0.2633 val_loss=0.2809 val_recall=0.9563 val_pr_auc=0.7701 | 6.1s
+[lstm_L5] epoch 7/30 train_loss=0.2689 val_loss=0.2627 val_recall=0.9229 val_pr_auc=0.8053 | 6.1s
+[lstm_L5] epoch 8/30 train_loss=0.2520 val_loss=0.2723 val_recall=0.9094 val_pr_auc=0.8102 | 6.1s
+[lstm_L5] epoch 9/30 train_loss=0.2464 val_loss=0.2514 val_recall=0.9281 val_pr_auc=0.8105 | 6.1s
+[lstm_L5] epoch 10/30 train_loss=0.2377 val_loss=0.2671 val_recall=0.9010 val_pr_auc=0.8173 | 6.0s
+[lstm_L5] epoch 11/30 train_loss=0.2371 val_loss=0.2367 val_recall=0.9448 val_pr_auc=0.8138 | 6.0s
+[lstm_L5] epoch 12/30 train_loss=0.2261 val_loss=0.2273 val_recall=0.9406 val_pr_auc=0.8185 | 5.9s
+[lstm_L5] epoch 13/30 train_loss=0.2225 val_loss=0.2328 val_recall=0.9375 val_pr_auc=0.8204 | 6.0s
+[lstm_L5] epoch 14/30 train_loss=0.2207 val_loss=0.2257 val_recall=0.9521 val_pr_auc=0.8170 | 5.9s
+[lstm_L5] epoch 15/30 train_loss=0.2199 val_loss=0.2422 val_recall=0.9594 val_pr_auc=0.8147 | 6.0s
+[lstm_L5] epoch 16/30 train_loss=0.2423 val_loss=0.2234 val_recall=0.9385 val_pr_auc=0.8330 | 5.9s
+[lstm_L5] epoch 17/30 train_loss=0.2132 val_loss=0.2234 val_recall=0.9365 val_pr_auc=0.8286 | 5.9s
+[lstm_L5] epoch 18/30 train_loss=0.2086 val_loss=0.2231 val_recall=0.9448 val_pr_auc=0.8277 | 6.0s
+[lstm_L5] epoch 19/30 train_loss=0.2066 val_loss=0.2213 val_recall=0.9406 val_pr_auc=0.8256 | 5.9s
+[lstm_L5] epoch 20/30 train_loss=0.2042 val_loss=0.2283 val_recall=0.9313 val_pr_auc=0.8377 | 5.9s
+[lstm_L5] epoch 21/30 train_loss=0.2056 val_loss=0.2128 val_recall=0.9490 val_pr_auc=0.8361 | 6.0s
+[lstm_L5] epoch 22/30 train_loss=0.2007 val_loss=0.2282 val_recall=0.9292 val_pr_auc=0.8358 | 6.0s
+[lstm_L5] epoch 23/30 train_loss=0.1995 val_loss=0.2090 val_recall=0.9542 val_pr_auc=0.8353 | 5.9s
+[lstm_L5] epoch 24/30 train_loss=0.1986 val_loss=0.2201 val_recall=0.9281 val_pr_auc=0.8383 | 6.0s
+[lstm_L5] epoch 25/30 train_loss=0.1948 val_loss=0.2207 val_recall=0.9323 val_pr_auc=0.8398 | 6.0s
+[lstm_L5] epoch 26/30 train_loss=0.1969 val_loss=0.2126 val_recall=0.9417 val_pr_auc=0.8403 | 6.0s
+[lstm_L5] epoch 27/30 train_loss=0.1948 val_loss=0.2360 val_recall=0.9208 val_pr_auc=0.8414 | 5.9s
+[lstm_L5] epoch 28/30 train_loss=0.1939 val_loss=0.2120 val_recall=0.9417 val_pr_auc=0.8422 | 6.0s
+[lstm_L5] epoch 29/30 train_loss=0.1919 val_loss=0.2134 val_recall=0.9396 val_pr_auc=0.8397 | 5.9s
+[lstm_L5] epoch 30/30 train_loss=0.1897 val_loss=0.2065 val_recall=0.9469 val_pr_auc=0.8422 | 6.0s
+[lstm_L5] TEST acc=0.9725 P=0.2721 R=0.9271 F1=0.4207 ROC-AUC=0.9825 PR-AUC=0.8214 | best epoch 30/30 (elapsed 180.0s)
+
+===== mlp_L10 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[mlp_L10] epoch 1/30 train_loss=0.6297 val_loss=0.3350 val_recall=0.9135 val_pr_auc=0.5966 | 5.6s
+[mlp_L10] epoch 2/30 train_loss=0.3446 val_loss=0.2997 val_recall=0.9250 val_pr_auc=0.7245 | 5.6s
+[mlp_L10] epoch 3/30 train_loss=0.3174 val_loss=0.2878 val_recall=0.9281 val_pr_auc=0.7530 | 5.6s
+[mlp_L10] epoch 4/30 train_loss=0.3033 val_loss=0.2789 val_recall=0.9354 val_pr_auc=0.7728 | 5.6s
+[mlp_L10] epoch 5/30 train_loss=0.2943 val_loss=0.2735 val_recall=0.9292 val_pr_auc=0.7761 | 5.5s
+[mlp_L10] epoch 6/30 train_loss=0.2890 val_loss=0.2683 val_recall=0.9396 val_pr_auc=0.7813 | 5.6s
+[mlp_L10] epoch 7/30 train_loss=0.2841 val_loss=0.2653 val_recall=0.9375 val_pr_auc=0.7861 | 5.6s
+[mlp_L10] epoch 8/30 train_loss=0.2810 val_loss=0.2599 val_recall=0.9396 val_pr_auc=0.7847 | 5.6s
+[mlp_L10] epoch 9/30 train_loss=0.2748 val_loss=0.2579 val_recall=0.9385 val_pr_auc=0.7905 | 5.6s
+[mlp_L10] epoch 10/30 train_loss=0.2720 val_loss=0.2546 val_recall=0.9396 val_pr_auc=0.7913 | 5.6s
+[mlp_L10] epoch 11/30 train_loss=0.2682 val_loss=0.2560 val_recall=0.9448 val_pr_auc=0.7886 | 5.6s
+[mlp_L10] epoch 12/30 train_loss=0.2638 val_loss=0.2515 val_recall=0.9458 val_pr_auc=0.7935 | 5.6s
+[mlp_L10] epoch 13/30 train_loss=0.2641 val_loss=0.2471 val_recall=0.9365 val_pr_auc=0.7900 | 5.6s
+[mlp_L10] epoch 14/30 train_loss=0.2564 val_loss=0.2434 val_recall=0.9396 val_pr_auc=0.7949 | 5.6s
+[mlp_L10] epoch 15/30 train_loss=0.2555 val_loss=0.2368 val_recall=0.9469 val_pr_auc=0.7977 | 5.5s
+[mlp_L10] epoch 16/30 train_loss=0.2621 val_loss=0.2345 val_recall=0.9448 val_pr_auc=0.8020 | 5.5s
+[mlp_L10] epoch 17/30 train_loss=0.2478 val_loss=0.2328 val_recall=0.9437 val_pr_auc=0.8022 | 5.5s
+[mlp_L10] epoch 18/30 train_loss=0.2451 val_loss=0.2329 val_recall=0.9458 val_pr_auc=0.8004 | 5.6s
+[mlp_L10] epoch 19/30 train_loss=0.2424 val_loss=0.2296 val_recall=0.9417 val_pr_auc=0.8006 | 5.6s
+[mlp_L10] epoch 20/30 train_loss=0.2441 val_loss=0.2285 val_recall=0.9406 val_pr_auc=0.7956 | 5.6s
+[mlp_L10] epoch 21/30 train_loss=0.2436 val_loss=0.2297 val_recall=0.9427 val_pr_auc=0.7958 | 5.5s
+[mlp_L10] epoch 22/30 train_loss=0.2393 val_loss=0.2265 val_recall=0.9417 val_pr_auc=0.8019 | 5.5s
+[mlp_L10] early stopping (best epoch 17)
+[mlp_L10] TEST acc=0.9666 P=0.2316 R=0.9062 F1=0.3689 ROC-AUC=0.9794 PR-AUC=0.7666 | best epoch 17/22 (elapsed 122.3s)
+
+===== gru_L10 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[gru_L10] epoch 1/30 train_loss=0.5881 val_loss=0.3499 val_recall=0.9396 val_pr_auc=0.6615 | 5.9s
+[gru_L10] epoch 2/30 train_loss=0.3098 val_loss=0.3029 val_recall=0.9250 val_pr_auc=0.7706 | 5.9s
+[gru_L10] epoch 3/30 train_loss=0.2876 val_loss=0.2893 val_recall=0.9292 val_pr_auc=0.7821 | 5.9s
+[gru_L10] epoch 4/30 train_loss=0.2701 val_loss=0.2785 val_recall=0.9250 val_pr_auc=0.7901 | 5.9s
+[gru_L10] epoch 5/30 train_loss=0.2623 val_loss=0.2775 val_recall=0.9229 val_pr_auc=0.7870 | 5.9s
+[gru_L10] epoch 6/30 train_loss=0.2543 val_loss=0.2833 val_recall=0.9521 val_pr_auc=0.7756 | 5.9s
+[gru_L10] epoch 7/30 train_loss=0.2530 val_loss=0.2628 val_recall=0.9208 val_pr_auc=0.8003 | 5.9s
+[gru_L10] epoch 8/30 train_loss=0.2411 val_loss=0.2568 val_recall=0.9260 val_pr_auc=0.8100 | 5.9s
+[gru_L10] epoch 9/30 train_loss=0.2298 val_loss=0.2478 val_recall=0.9281 val_pr_auc=0.8147 | 5.9s
+[gru_L10] epoch 10/30 train_loss=0.2201 val_loss=0.2437 val_recall=0.9146 val_pr_auc=0.8130 | 5.9s
+[gru_L10] epoch 11/30 train_loss=0.2149 val_loss=0.2359 val_recall=0.9281 val_pr_auc=0.8108 | 5.9s
+[gru_L10] epoch 12/30 train_loss=0.2103 val_loss=0.2224 val_recall=0.9406 val_pr_auc=0.8140 | 5.9s
+[gru_L10] epoch 13/30 train_loss=0.2031 val_loss=0.2239 val_recall=0.9375 val_pr_auc=0.8232 | 5.9s
+[gru_L10] epoch 14/30 train_loss=0.1982 val_loss=0.2205 val_recall=0.9458 val_pr_auc=0.8221 | 5.9s
+[gru_L10] epoch 15/30 train_loss=0.1945 val_loss=0.2193 val_recall=0.9531 val_pr_auc=0.8210 | 5.9s
+[gru_L10] epoch 16/30 train_loss=0.1954 val_loss=0.2244 val_recall=0.9375 val_pr_auc=0.8203 | 5.9s
+[gru_L10] epoch 17/30 train_loss=0.1865 val_loss=0.2187 val_recall=0.9354 val_pr_auc=0.8333 | 6.0s
+[gru_L10] epoch 18/30 train_loss=0.1772 val_loss=0.2337 val_recall=0.9177 val_pr_auc=0.8195 | 6.1s
+[gru_L10] epoch 19/30 train_loss=0.1759 val_loss=0.2052 val_recall=0.9573 val_pr_auc=0.8292 | 6.0s
+[gru_L10] epoch 20/30 train_loss=0.1728 val_loss=0.1979 val_recall=0.9344 val_pr_auc=0.8382 | 6.1s
+[gru_L10] epoch 21/30 train_loss=0.1662 val_loss=0.2019 val_recall=0.9583 val_pr_auc=0.8292 | 6.1s
+[gru_L10] epoch 22/30 train_loss=0.1614 val_loss=0.1984 val_recall=0.9260 val_pr_auc=0.8342 | 6.0s
+[gru_L10] epoch 23/30 train_loss=0.1587 val_loss=0.1987 val_recall=0.9542 val_pr_auc=0.8294 | 6.0s
+[gru_L10] epoch 24/30 train_loss=0.1527 val_loss=0.1969 val_recall=0.9365 val_pr_auc=0.8431 | 6.0s
+[gru_L10] epoch 25/30 train_loss=0.1525 val_loss=0.1959 val_recall=0.9406 val_pr_auc=0.8316 | 6.0s
+[gru_L10] epoch 26/30 train_loss=0.1496 val_loss=0.1860 val_recall=0.9437 val_pr_auc=0.8455 | 6.0s
+[gru_L10] epoch 27/30 train_loss=0.1464 val_loss=0.1953 val_recall=0.9281 val_pr_auc=0.8393 | 6.1s
+[gru_L10] epoch 28/30 train_loss=0.1447 val_loss=0.1770 val_recall=0.9417 val_pr_auc=0.8418 | 6.1s
+[gru_L10] epoch 29/30 train_loss=0.1417 val_loss=0.1747 val_recall=0.9500 val_pr_auc=0.8496 | 6.0s
+[gru_L10] epoch 30/30 train_loss=0.1445 val_loss=0.1709 val_recall=0.9563 val_pr_auc=0.8467 | 6.1s
+[gru_L10] TEST acc=0.9610 P=0.2092 R=0.9417 F1=0.3423 ROC-AUC=0.9933 PR-AUC=0.8442 | best epoch 29/30 (elapsed 179.2s)
+
+===== lstm_L10 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[lstm_L10] epoch 1/30 train_loss=0.7291 val_loss=0.3244 val_recall=0.9208 val_pr_auc=0.6714 | 6.1s
+[lstm_L10] epoch 2/30 train_loss=0.3048 val_loss=0.2877 val_recall=0.9260 val_pr_auc=0.7737 | 6.0s
+[lstm_L10] epoch 3/30 train_loss=0.2898 val_loss=0.2766 val_recall=0.9271 val_pr_auc=0.7937 | 6.1s
+[lstm_L10] epoch 4/30 train_loss=0.2763 val_loss=0.2685 val_recall=0.9344 val_pr_auc=0.7906 | 6.1s
+[lstm_L10] epoch 5/30 train_loss=0.2691 val_loss=0.2669 val_recall=0.9302 val_pr_auc=0.7957 | 6.1s
+[lstm_L10] epoch 6/30 train_loss=0.2629 val_loss=0.2813 val_recall=0.9552 val_pr_auc=0.7675 | 6.1s
+[lstm_L10] epoch 7/30 train_loss=0.2670 val_loss=0.2591 val_recall=0.9271 val_pr_auc=0.7998 | 6.1s
+[lstm_L10] epoch 8/30 train_loss=0.2562 val_loss=0.2606 val_recall=0.9229 val_pr_auc=0.8042 | 6.1s
+[lstm_L10] epoch 9/30 train_loss=0.2452 val_loss=0.2503 val_recall=0.9292 val_pr_auc=0.8043 | 6.1s
+[lstm_L10] epoch 10/30 train_loss=0.2369 val_loss=0.2638 val_recall=0.9052 val_pr_auc=0.8052 | 6.1s
+[lstm_L10] epoch 11/30 train_loss=0.2358 val_loss=0.2356 val_recall=0.9406 val_pr_auc=0.8139 | 6.1s
+[lstm_L10] epoch 12/30 train_loss=0.2319 val_loss=0.2306 val_recall=0.9437 val_pr_auc=0.8142 | 6.1s
+[lstm_L10] epoch 13/30 train_loss=0.2268 val_loss=0.2340 val_recall=0.9333 val_pr_auc=0.8176 | 6.1s
+[lstm_L10] epoch 14/30 train_loss=0.2229 val_loss=0.2267 val_recall=0.9448 val_pr_auc=0.8161 | 6.2s
+[lstm_L10] epoch 15/30 train_loss=0.2210 val_loss=0.2376 val_recall=0.9583 val_pr_auc=0.8111 | 6.2s
+[lstm_L10] epoch 16/30 train_loss=0.2510 val_loss=0.2292 val_recall=0.9385 val_pr_auc=0.8271 | 6.1s
+[lstm_L10] epoch 17/30 train_loss=0.2170 val_loss=0.2273 val_recall=0.9365 val_pr_auc=0.8257 | 6.1s
+[lstm_L10] epoch 18/30 train_loss=0.2105 val_loss=0.2229 val_recall=0.9448 val_pr_auc=0.8261 | 6.0s
+[lstm_L10] epoch 19/30 train_loss=0.2079 val_loss=0.2200 val_recall=0.9375 val_pr_auc=0.8264 | 6.0s
+[lstm_L10] epoch 20/30 train_loss=0.2057 val_loss=0.2197 val_recall=0.9396 val_pr_auc=0.8371 | 6.0s
+[lstm_L10] epoch 21/30 train_loss=0.2053 val_loss=0.2132 val_recall=0.9448 val_pr_auc=0.8350 | 6.0s
+[lstm_L10] epoch 22/30 train_loss=0.2009 val_loss=0.2311 val_recall=0.9260 val_pr_auc=0.8358 | 6.0s
+[lstm_L10] epoch 23/30 train_loss=0.2006 val_loss=0.2107 val_recall=0.9469 val_pr_auc=0.8378 | 6.0s
+[lstm_L10] epoch 24/30 train_loss=0.1944 val_loss=0.2215 val_recall=0.9354 val_pr_auc=0.8382 | 6.0s
+[lstm_L10] epoch 25/30 train_loss=0.1952 val_loss=0.2172 val_recall=0.9375 val_pr_auc=0.8368 | 6.0s
+[lstm_L10] epoch 26/30 train_loss=0.1978 val_loss=0.2224 val_recall=0.9313 val_pr_auc=0.8405 | 6.4s
+[lstm_L10] epoch 27/30 train_loss=0.1929 val_loss=0.2473 val_recall=0.9135 val_pr_auc=0.8416 | 6.8s
+[lstm_L10] epoch 28/30 train_loss=0.1921 val_loss=0.2242 val_recall=0.9354 val_pr_auc=0.8443 | 6.7s
+[lstm_L10] epoch 29/30 train_loss=0.1893 val_loss=0.2031 val_recall=0.9510 val_pr_auc=0.8399 | 6.6s
+[lstm_L10] epoch 30/30 train_loss=0.1915 val_loss=0.2027 val_recall=0.9573 val_pr_auc=0.8408 | 7.4s
+[lstm_L10] TEST acc=0.9801 P=0.3421 R=0.9125 F1=0.4976 ROC-AUC=0.9840 PR-AUC=0.8200 | best epoch 28/30 (elapsed 185.3s)
+
+===== mlp_L20 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[mlp_L20] epoch 1/30 train_loss=0.6297 val_loss=0.3350 val_recall=0.9135 val_pr_auc=0.5966 | 5.9s
+[mlp_L20] epoch 2/30 train_loss=0.3446 val_loss=0.2997 val_recall=0.9250 val_pr_auc=0.7245 | 5.8s
+[mlp_L20] epoch 3/30 train_loss=0.3174 val_loss=0.2878 val_recall=0.9281 val_pr_auc=0.7530 | 5.7s
+[mlp_L20] epoch 4/30 train_loss=0.3033 val_loss=0.2789 val_recall=0.9354 val_pr_auc=0.7728 | 5.7s
+[mlp_L20] epoch 5/30 train_loss=0.2943 val_loss=0.2735 val_recall=0.9292 val_pr_auc=0.7761 | 5.7s
+[mlp_L20] epoch 6/30 train_loss=0.2890 val_loss=0.2683 val_recall=0.9396 val_pr_auc=0.7813 | 5.7s
+[mlp_L20] epoch 7/30 train_loss=0.2841 val_loss=0.2653 val_recall=0.9375 val_pr_auc=0.7861 | 5.7s
+[mlp_L20] epoch 8/30 train_loss=0.2810 val_loss=0.2599 val_recall=0.9396 val_pr_auc=0.7847 | 5.7s
+[mlp_L20] epoch 9/30 train_loss=0.2748 val_loss=0.2579 val_recall=0.9385 val_pr_auc=0.7905 | 5.7s
+[mlp_L20] epoch 10/30 train_loss=0.2720 val_loss=0.2546 val_recall=0.9396 val_pr_auc=0.7913 | 5.6s
+[mlp_L20] epoch 11/30 train_loss=0.2682 val_loss=0.2560 val_recall=0.9448 val_pr_auc=0.7886 | 5.7s
+[mlp_L20] epoch 12/30 train_loss=0.2638 val_loss=0.2515 val_recall=0.9458 val_pr_auc=0.7935 | 5.7s
+[mlp_L20] epoch 13/30 train_loss=0.2641 val_loss=0.2471 val_recall=0.9365 val_pr_auc=0.7900 | 5.7s
+[mlp_L20] epoch 14/30 train_loss=0.2564 val_loss=0.2434 val_recall=0.9396 val_pr_auc=0.7949 | 5.7s
+[mlp_L20] epoch 15/30 train_loss=0.2555 val_loss=0.2368 val_recall=0.9469 val_pr_auc=0.7977 | 5.7s
+[mlp_L20] epoch 16/30 train_loss=0.2621 val_loss=0.2345 val_recall=0.9448 val_pr_auc=0.8020 | 5.7s
+[mlp_L20] epoch 17/30 train_loss=0.2478 val_loss=0.2328 val_recall=0.9437 val_pr_auc=0.8022 | 5.6s
+[mlp_L20] epoch 18/30 train_loss=0.2451 val_loss=0.2329 val_recall=0.9458 val_pr_auc=0.8004 | 5.6s
+[mlp_L20] epoch 19/30 train_loss=0.2424 val_loss=0.2296 val_recall=0.9417 val_pr_auc=0.8006 | 5.7s
+[mlp_L20] epoch 20/30 train_loss=0.2441 val_loss=0.2285 val_recall=0.9406 val_pr_auc=0.7956 | 5.7s
+[mlp_L20] epoch 21/30 train_loss=0.2436 val_loss=0.2297 val_recall=0.9427 val_pr_auc=0.7958 | 5.7s
+[mlp_L20] epoch 22/30 train_loss=0.2393 val_loss=0.2265 val_recall=0.9417 val_pr_auc=0.8019 | 5.6s
+[mlp_L20] early stopping (best epoch 17)
+[mlp_L20] TEST acc=0.9666 P=0.2316 R=0.9062 F1=0.3689 ROC-AUC=0.9794 PR-AUC=0.7666 | best epoch 17/22 (elapsed 125.2s)
+
+===== gru_L20 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[gru_L20] epoch 1/30 train_loss=0.5803 val_loss=0.3473 val_recall=0.9510 val_pr_auc=0.6626 | 6.1s
+[gru_L20] epoch 2/30 train_loss=0.3053 val_loss=0.2986 val_recall=0.9292 val_pr_auc=0.7692 | 6.1s
+[gru_L20] epoch 3/30 train_loss=0.2826 val_loss=0.2870 val_recall=0.9323 val_pr_auc=0.7768 | 6.2s
+[gru_L20] epoch 4/30 train_loss=0.2658 val_loss=0.2762 val_recall=0.9354 val_pr_auc=0.7861 | 6.0s
+[gru_L20] epoch 5/30 train_loss=0.2553 val_loss=0.2842 val_recall=0.9271 val_pr_auc=0.7823 | 6.0s
+[gru_L20] epoch 6/30 train_loss=0.2475 val_loss=0.2805 val_recall=0.9510 val_pr_auc=0.7756 | 6.0s
+[gru_L20] epoch 7/30 train_loss=0.2529 val_loss=0.2637 val_recall=0.9260 val_pr_auc=0.7964 | 6.1s
+[gru_L20] epoch 8/30 train_loss=0.2396 val_loss=0.2690 val_recall=0.9187 val_pr_auc=0.8018 | 5.9s
+[gru_L20] epoch 9/30 train_loss=0.2295 val_loss=0.2542 val_recall=0.9323 val_pr_auc=0.8004 | 6.1s
+[gru_L20] epoch 10/30 train_loss=0.2189 val_loss=0.2566 val_recall=0.9125 val_pr_auc=0.8013 | 6.0s
+[gru_L20] epoch 11/30 train_loss=0.2140 val_loss=0.2451 val_recall=0.9281 val_pr_auc=0.8074 | 6.1s
+[gru_L20] epoch 12/30 train_loss=0.2066 val_loss=0.2330 val_recall=0.9313 val_pr_auc=0.8135 | 5.9s
+[gru_L20] epoch 13/30 train_loss=0.2062 val_loss=0.2373 val_recall=0.9417 val_pr_auc=0.8106 | 6.0s
+[gru_L20] epoch 14/30 train_loss=0.1988 val_loss=0.2251 val_recall=0.9406 val_pr_auc=0.8152 | 6.0s
+[gru_L20] epoch 15/30 train_loss=0.1936 val_loss=0.2253 val_recall=0.9500 val_pr_auc=0.8115 | 6.1s
+[gru_L20] epoch 16/30 train_loss=0.2063 val_loss=0.2304 val_recall=0.9271 val_pr_auc=0.8204 | 5.9s
+[gru_L20] epoch 17/30 train_loss=0.1860 val_loss=0.2192 val_recall=0.9385 val_pr_auc=0.8342 | 6.0s
+[gru_L20] epoch 18/30 train_loss=0.1814 val_loss=0.2273 val_recall=0.9271 val_pr_auc=0.8219 | 6.0s
+[gru_L20] epoch 19/30 train_loss=0.1776 val_loss=0.2171 val_recall=0.9427 val_pr_auc=0.8264 | 6.1s
+[gru_L20] epoch 20/30 train_loss=0.1758 val_loss=0.2116 val_recall=0.9344 val_pr_auc=0.8367 | 5.9s
+[gru_L20] epoch 21/30 train_loss=0.1693 val_loss=0.2126 val_recall=0.9448 val_pr_auc=0.8228 | 6.1s
+[gru_L20] epoch 22/30 train_loss=0.1667 val_loss=0.2213 val_recall=0.9240 val_pr_auc=0.8298 | 6.0s
+[gru_L20] epoch 23/30 train_loss=0.1611 val_loss=0.2188 val_recall=0.9490 val_pr_auc=0.8206 | 6.2s
+[gru_L20] epoch 24/30 train_loss=0.1590 val_loss=0.2195 val_recall=0.9281 val_pr_auc=0.8361 | 6.0s
+[gru_L20] epoch 25/30 train_loss=0.1529 val_loss=0.2139 val_recall=0.9313 val_pr_auc=0.8224 | 6.1s
+[gru_L20] early stopping (best epoch 20)
+[gru_L20] TEST acc=0.9659 P=0.2298 R=0.9219 F1=0.3678 ROC-AUC=0.9882 PR-AUC=0.8170 | best epoch 20/25 (elapsed 151.1s)
+
+===== lstm_L20 | train 417,847 (사기 5,280) | val 87,702 | test 89,093 | device cuda =====
+[lstm_L20] epoch 1/30 train_loss=0.7306 val_loss=0.3509 val_recall=0.8917 val_pr_auc=0.6509 | 6.2s
+[lstm_L20] epoch 2/30 train_loss=0.3031 val_loss=0.2896 val_recall=0.9292 val_pr_auc=0.7765 | 6.1s
+[lstm_L20] epoch 3/30 train_loss=0.2829 val_loss=0.2763 val_recall=0.9333 val_pr_auc=0.7864 | 6.1s
+[lstm_L20] epoch 4/30 train_loss=0.2683 val_loss=0.2720 val_recall=0.9365 val_pr_auc=0.7908 | 6.1s
+[lstm_L20] epoch 5/30 train_loss=0.2607 val_loss=0.2706 val_recall=0.9260 val_pr_auc=0.7948 | 6.1s
+[lstm_L20] epoch 6/30 train_loss=0.2533 val_loss=0.2751 val_recall=0.9542 val_pr_auc=0.7716 | 6.1s
+[lstm_L20] epoch 7/30 train_loss=0.2580 val_loss=0.2726 val_recall=0.9135 val_pr_auc=0.7981 | 6.1s
+[lstm_L20] epoch 8/30 train_loss=0.2478 val_loss=0.2820 val_recall=0.8990 val_pr_auc=0.8067 | 6.1s
+[lstm_L20] epoch 9/30 train_loss=0.2432 val_loss=0.2565 val_recall=0.9219 val_pr_auc=0.8011 | 6.1s
+[lstm_L20] epoch 10/30 train_loss=0.2311 val_loss=0.2767 val_recall=0.9000 val_pr_auc=0.8076 | 6.1s
+[lstm_L20] epoch 11/30 train_loss=0.2310 val_loss=0.2470 val_recall=0.9250 val_pr_auc=0.8142 | 6.1s
+[lstm_L20] epoch 12/30 train_loss=0.2234 val_loss=0.2343 val_recall=0.9365 val_pr_auc=0.8133 | 6.1s
+[lstm_L20] epoch 13/30 train_loss=0.2234 val_loss=0.2488 val_recall=0.9177 val_pr_auc=0.8129 | 6.1s
+[lstm_L20] epoch 14/30 train_loss=0.2166 val_loss=0.2345 val_recall=0.9281 val_pr_auc=0.8133 | 6.1s
+[lstm_L20] epoch 15/30 train_loss=0.2130 val_loss=0.2369 val_recall=0.9469 val_pr_auc=0.8082 | 6.1s
+[lstm_L20] epoch 16/30 train_loss=0.2368 val_loss=0.2412 val_recall=0.9146 val_pr_auc=0.8285 | 6.1s
+[lstm_L20] epoch 17/30 train_loss=0.2077 val_loss=0.2283 val_recall=0.9229 val_pr_auc=0.8250 | 6.1s
+[lstm_L20] epoch 18/30 train_loss=0.2049 val_loss=0.2414 val_recall=0.9135 val_pr_auc=0.8245 | 6.1s
+[lstm_L20] epoch 19/30 train_loss=0.2027 val_loss=0.2373 val_recall=0.9156 val_pr_auc=0.8266 | 6.1s
+[lstm_L20] epoch 20/30 train_loss=0.2011 val_loss=0.2267 val_recall=0.9281 val_pr_auc=0.8330 | 6.1s
+[lstm_L20] epoch 21/30 train_loss=0.1959 val_loss=0.2164 val_recall=0.9375 val_pr_auc=0.8341 | 6.1s
+[lstm_L20] epoch 22/30 train_loss=0.1964 val_loss=0.2335 val_recall=0.9187 val_pr_auc=0.8320 | 6.1s
+[lstm_L20] epoch 23/30 train_loss=0.1935 val_loss=0.2186 val_recall=0.9323 val_pr_auc=0.8386 | 6.1s
+[lstm_L20] epoch 24/30 train_loss=0.1890 val_loss=0.2455 val_recall=0.9177 val_pr_auc=0.8361 | 6.1s
+[lstm_L20] epoch 25/30 train_loss=0.1868 val_loss=0.2533 val_recall=0.9135 val_pr_auc=0.8358 | 6.1s
+[lstm_L20] epoch 26/30 train_loss=0.1879 val_loss=0.2344 val_recall=0.9219 val_pr_auc=0.8404 | 6.1s
+[lstm_L20] epoch 27/30 train_loss=0.1836 val_loss=0.2664 val_recall=0.9094 val_pr_auc=0.8379 | 6.1s
+[lstm_L20] epoch 28/30 train_loss=0.1867 val_loss=0.2375 val_recall=0.9240 val_pr_auc=0.8372 | 6.3s
+[lstm_L20] epoch 29/30 train_loss=0.1821 val_loss=0.2281 val_recall=0.9292 val_pr_auc=0.8424 | 6.3s
+[lstm_L20] epoch 30/30 train_loss=0.1825 val_loss=0.2109 val_recall=0.9417 val_pr_auc=0.8416 | 6.3s
+[lstm_L20] TEST acc=0.9778 P=0.3162 R=0.9156 F1=0.4701 ROC-AUC=0.9838 PR-AUC=0.8253 | best epoch 29/30 (elapsed 183.9s)
+
+===== 요약 (TEST, threshold 0.5) =====
+model    L     Acc       P       R      F1   ROC-AUC   PR-AUC  best_ep
+mlp      5  0.9666  0.2316  0.9062  0.3689    0.9794   0.7666   17/22
+gru      5  0.9775  0.3162  0.9396  0.4731    0.9948   0.8505   29/30
+lstm     5  0.9725  0.2721  0.9271  0.4207    0.9825   0.8214   30/30
+mlp     10  0.9666  0.2316  0.9062  0.3689    0.9794   0.7666   17/22
+gru     10  0.9610  0.2092  0.9417  0.3423    0.9933   0.8442   29/30
+lstm    10  0.9801  0.3421  0.9125  0.4976    0.9840   0.8200   28/30
+mlp     20  0.9666  0.2316  0.9062  0.3689    0.9794   0.7666   17/22
+gru     20  0.9659  0.2298  0.9219  0.3678    0.9882   0.8170   20/25
+lstm    20  0.9778  0.3162  0.9156  0.4701    0.9838   0.8253   29/30
+
+저장 위치: /home/compu/fraud/mlp_rnn/results
+usage: train.py [-h] --L L --model {tcn,transformer}
+train.py: error: the following arguments are required: --L, --model
