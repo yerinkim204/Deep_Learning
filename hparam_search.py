@@ -60,7 +60,12 @@ OUT_DIR = os.path.join(HERE, "hparam_results")
 # ---------------------------------------------------------------------------
 # 탐색 범위 / 고정값
 # ---------------------------------------------------------------------------
-MODELS = ["mlp", "gru", "lstm", "tcn", "transformer"]
+MODELS = ["mlp", "gru", "lstm", "tcn", "transformer", "mlp_tx"]
+
+# mlp_tx: 과거 이력 집계 feature를 뺀 transaction-level baseline.
+# npz X의 9개 열 중 (category, amount_zscore, sin_dow, cos_dow)의 인덱스로 수정할 것.
+# -> check_features.py 로 열 순서 확인
+TX_FEATURE_IDX = [0, 1, 2, 3]
 GRID = {
     "lr": [0.0005, 0.001, 0.005],
     "hidden": [16, 32, 64],
@@ -89,18 +94,20 @@ def set_seed(seed=SEED):
 # 모델 (MLP/GRU/LSTM 은 train_mlp_rnn.py 와 동일 구조, 크기만 파라미터화)
 # ---------------------------------------------------------------------------
 class MLPBaseline(nn.Module):
-    """현재 거래(t)의 특징 9개만 사용."""
+    """현재 거래(t)의 특징만 사용. feature_idx가 주어지면 그 열만 사용 (mlp_tx)."""
 
-    def __init__(self, n_features, hidden, dropout):
+    def __init__(self, n_features, hidden, dropout, feature_idx=None):
         super().__init__()
+        idx = list(range(n_features)) if feature_idx is None else list(feature_idx)
+        self.register_buffer("feature_idx", torch.tensor(idx, dtype=torch.long))
         self.net = nn.Sequential(
-            nn.Linear(n_features, hidden), nn.ReLU(), nn.Dropout(dropout),
+            nn.Linear(len(idx), hidden), nn.ReLU(), nn.Dropout(dropout),
             nn.Linear(hidden, hidden), nn.ReLU(), nn.Dropout(dropout),
             nn.Linear(hidden, 1),
         )
 
     def forward(self, x, is_padding=None):
-        return self.net(x[:, -1, :]).squeeze(-1)
+        return self.net(x[:, -1, :][:, self.feature_idx]).squeeze(-1)
 
 
 class RNNClassifier(nn.Module):
@@ -121,6 +128,8 @@ class RNNClassifier(nn.Module):
 def build_model(name, n_features, hidden, dropout):
     if name == "mlp":
         return MLPBaseline(n_features, hidden, dropout)
+    if name == "mlp_tx":
+        return MLPBaseline(n_features, hidden, dropout, feature_idx=TX_FEATURE_IDX)
     if name in ("gru", "lstm"):
         return RNNClassifier(n_features, name, hidden, dropout)
     if name == "tcn":
@@ -258,7 +267,8 @@ def stage_search(device):
             append_row(path, res)
 
     rows = load_done(path)
-    best = {}
+    bc_path = os.path.join(OUT_DIR, "best_config.json")
+    best = json.load(open(bc_path, encoding="utf-8")) if os.path.exists(bc_path) else {}
     for name in MODELS:
         cand = [r for r in rows if r["model"] == name]
         b = max(cand, key=lambda r: float(r["val_pr_auc"]))
@@ -304,7 +314,11 @@ def stage_final(device):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--stage", choices=["all", "search", "final"], default="all")
+    ap.add_argument("--models", nargs="*", default=None,
+                    help="이 모델들만 실행 (예: --models mlp_tx). 생략하면 전체(이미 끝난 건 건너뜀)")
     args, _ = ap.parse_known_args()
+    if args.models:
+        MODELS[:] = [m for m in MODELS if m in args.models]
     os.makedirs(OUT_DIR, exist_ok=True)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"device: {device}")

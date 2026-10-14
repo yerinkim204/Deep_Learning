@@ -28,5 +28,11 @@
     "hidden": 64,
     "dropout": 0.1,
     "val_pr_auc": 0.8359537183306518
+  },
+  "mlp_tx": {
+    "lr": 0.001,
+    "hidden": 64,
+    "dropout": 0.1,
+    "val_pr_auc": 0.7664849231833044
   }
 }

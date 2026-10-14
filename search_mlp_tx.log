@@ -1,0 +1,62 @@
+nohup: 입력 무시
+device: cuda
+[search 1/27 mlp_tx] lr=0.0005 hidden=16 dropout=0.1 | val PR-AUC 0.7468 (best ep 10/10, 54.2s)
+[search 2/27 mlp_tx] lr=0.0005 hidden=16 dropout=0.2 | val PR-AUC 0.7449 (best ep 9/10, 53.6s)
+[search 3/27 mlp_tx] lr=0.0005 hidden=16 dropout=0.3 | val PR-AUC 0.7427 (best ep 9/10, 53.5s)
+[search 4/27 mlp_tx] lr=0.0005 hidden=32 dropout=0.1 | val PR-AUC 0.7529 (best ep 10/10, 53.7s)
+[search 5/27 mlp_tx] lr=0.0005 hidden=32 dropout=0.2 | val PR-AUC 0.7445 (best ep 10/10, 54.8s)
+[search 6/27 mlp_tx] lr=0.0005 hidden=32 dropout=0.3 | val PR-AUC 0.7414 (best ep 10/10, 53.6s)
+[search 7/27 mlp_tx] lr=0.0005 hidden=64 dropout=0.1 | val PR-AUC 0.7578 (best ep 10/10, 53.6s)
+[search 8/27 mlp_tx] lr=0.0005 hidden=64 dropout=0.2 | val PR-AUC 0.7535 (best ep 10/10, 53.6s)
+[search 9/27 mlp_tx] lr=0.0005 hidden=64 dropout=0.3 | val PR-AUC 0.7496 (best ep 10/10, 53.6s)
+[search 10/27 mlp_tx] lr=0.001 hidden=16 dropout=0.1 | val PR-AUC 0.7517 (best ep 10/10, 53.5s)
+[search 11/27 mlp_tx] lr=0.001 hidden=16 dropout=0.2 | val PR-AUC 0.7427 (best ep 8/10, 53.6s)
+[search 12/27 mlp_tx] lr=0.001 hidden=16 dropout=0.3 | val PR-AUC 0.7443 (best ep 9/10, 53.7s)
+[search 13/27 mlp_tx] lr=0.001 hidden=32 dropout=0.1 | val PR-AUC 0.7656 (best ep 9/10, 53.7s)
+[search 14/27 mlp_tx] lr=0.001 hidden=32 dropout=0.2 | val PR-AUC 0.7503 (best ep 10/10, 53.7s)
+[search 15/27 mlp_tx] lr=0.001 hidden=32 dropout=0.3 | val PR-AUC 0.7461 (best ep 10/10, 53.7s)
+[search 16/27 mlp_tx] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.7665 (best ep 10/10, 53.7s)
+[search 17/27 mlp_tx] lr=0.001 hidden=64 dropout=0.2 | val PR-AUC 0.7650 (best ep 10/10, 53.7s)
+[search 18/27 mlp_tx] lr=0.001 hidden=64 dropout=0.3 | val PR-AUC 0.7579 (best ep 9/10, 53.7s)
+[search 19/27 mlp_tx] lr=0.005 hidden=16 dropout=0.1 | val PR-AUC 0.7604 (best ep 5/8, 43.0s)
+[search 20/27 mlp_tx] lr=0.005 hidden=16 dropout=0.2 | val PR-AUC 0.7511 (best ep 5/8, 43.0s)
+[search 21/27 mlp_tx] lr=0.005 hidden=16 dropout=0.3 | val PR-AUC 0.7426 (best ep 1/4, 21.5s)
+[search 22/27 mlp_tx] lr=0.005 hidden=32 dropout=0.1 | val PR-AUC 0.7650 (best ep 10/10, 53.7s)
+[search 23/27 mlp_tx] lr=0.005 hidden=32 dropout=0.2 | val PR-AUC 0.7587 (best ep 10/10, 54.0s)
+[search 24/27 mlp_tx] lr=0.005 hidden=32 dropout=0.3 | val PR-AUC 0.7537 (best ep 9/10, 53.7s)
+[search 25/27 mlp_tx] lr=0.005 hidden=64 dropout=0.1 | val PR-AUC 0.7606 (best ep 3/6, 32.2s)
+[search 26/27 mlp_tx] lr=0.005 hidden=64 dropout=0.2 | val PR-AUC 0.7617 (best ep 9/10, 53.1s)
+[search 27/27 mlp_tx] lr=0.005 hidden=64 dropout=0.3 | val PR-AUC 0.7590 (best ep 10/10, 53.3s)
+
+===== 탐색 결과: 모델별 최적 조합 (L=10, 검증 PR-AUC 기준) =====
+model             lr  hidden  dropout  val PR-AUC
+mlp            0.005      32      0.1      0.8189
+gru            0.005      32      0.2      0.8436
+lstm           0.005      32      0.1      0.8549
+tcn            0.005      64      0.1      0.8554
+transformer   0.0005      64      0.1      0.8360
+mlp_tx         0.001      64      0.1      0.7665
+[final mlp_tx_L5] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.7665 (best ep 10/15, 80.1s) | TEST PR-AUC 0.7347 F1 0.3172
+[final mlp_tx_L10] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.7665 (best ep 10/15, 80.7s) | TEST PR-AUC 0.7347 F1 0.3172
+[final mlp_tx_L20] lr=0.001 hidden=64 dropout=0.1 | val PR-AUC 0.7665 (best ep 10/15, 82.4s) | TEST PR-AUC 0.7347 F1 0.3172
+
+===== 최종 결과 (TEST, threshold 0.5) =====
+model          L     Acc       P       R      F1   ROC-AUC   PR-AUC  best_ep
+mlp            5  0.9729  0.2751  0.9260  0.4241    0.9889   0.8180   26/31
+gru            5  0.9657  0.2342  0.9625  0.3768    0.9947   0.8460   15/20
+lstm           5  0.9602  0.2039  0.9281  0.3343    0.9918   0.8203   19/24
+tcn            5  0.9765  0.3076  0.9469  0.4644    0.9958   0.8707   29/34
+transformer    5  0.9766  0.3060  0.9219  0.4595    0.9938   0.8158   10/15
+mlp           10  0.9729  0.2751  0.9260  0.4241    0.9889   0.8180   26/31
+gru           10  0.9635  0.2222  0.9542  0.3605    0.9937   0.8466   19/24
+lstm          10  0.9781  0.3231  0.9396  0.4808    0.9944   0.8476   13/18
+tcn           10  0.9792  0.3340  0.9396  0.4928    0.9950   0.8538   13/18
+transformer   10  0.9778  0.3183  0.9250  0.4736    0.9943   0.8242   17/22
+mlp           20  0.9729  0.2751  0.9260  0.4241    0.9889   0.8180   26/31
+gru           20  0.9786  0.3265  0.9281  0.4831    0.9940   0.8483   18/23
+lstm          20  0.9780  0.3199  0.9250  0.4754    0.9938   0.8481   19/24
+tcn           20  0.9658  0.2321  0.9437  0.3726    0.9935   0.8508   15/20
+transformer   20  0.9749  0.2908  0.9250  0.4425    0.9931   0.8049   10/15
+mlp_tx         5  0.9596  0.1940  0.8698  0.3172    0.9568   0.7347   10/15
+mlp_tx        10  0.9596  0.1940  0.8698  0.3172    0.9568   0.7347   10/15
+mlp_tx        20  0.9596  0.1940  0.8698  0.3172    0.9568   0.7347   10/15
